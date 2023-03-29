@@ -1,90 +1,75 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import Grid from '@mui/material/Grid';
-import CardContent from '@mui/material/CardContent';
+import { Box, Typography, Grid, Card, CardMedia, CardContent } from "@mui/material";
+
 export default function Content(){
-    return(
-        <Grid container>
-
-                <Grid item direction={'Column'}>
-                    <Box>
-                    <Typography variant='h4' mt={3}>
-                        Welcome to My Website
+    return (
+        <Grid>
+        <Box component="main" >
+            <Typography variant="h4">
+                Welcome to My Website
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 2}}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+             <br/>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis. Sed sed risus pretium quam vulputate. Massa tincidunt dui ut ornare lectus sit amet. Varius sit amet mattis vulputate enim. 
+            </Typography>
+        </Box>
+        <Grid container rowSpacing={2} columnSpacing={2} sx={{mt: 1}}>
+            <Grid item xs={12} md={6}>
+            <Card >
+                <CardMedia
+                    component="img"
+                    sx={{height: 140}}
+                    image ="./coconut.jpg"
+                    alt="" 
+                />
+                <CardContent>
+                    <Typography variant="h6" component="div">
+                        Card Title
                     </Typography>
-                    <Typography my={3} variant='body1'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet reiciendis exercitationem accusamus esse impedit ipsum officiis obcaecati explicabo, cumque, odit nostrum? Ab nisi fugit voluptates esse fugiat suscipit doloribus ea?
-                        Ad quam voluptates incidunt recusandae, amet tempore voluptate a doloremque consequatur iusto voluptatem possimus, vel voluptas. Dignissimos in molestiae unde repellat, quae aliquam. Voluptate autem voluptatibus, maiores officiis illum obcaecati!
+                    <Typography variant="body2" color="text.secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </Typography>
-                    <Typography variant='body1' mb={4}>
-                        quam voluptates incidunt recusandae, amet tempore voluptate a doloremque consequatur iusto voluptatem possimus, vel voluptas. Dignissimos in molestiae unde repellat, quae aliquam. Voluptate autem voluptatibus, maiores officiis illum obcaecati!
-                        Doloribus odio consequatur perspiciatisodit sapiente consequuntur necessitatibus ab optio id ratione est quibusdam possimus vel! Neque alias repudiandae fugiat cupiditate corporis, sint ex eius exercitationem illum officia ut!
-                    </Typography>
-                    </Box>
-
-                <Grid container>
-                    <Grid item xs>
-                    {/* creating card */}
-                    <Card sx={{ maxWidth: 300 }}>
-                        <CardMedia
-                            sx={{ height: 140 }}
-                            image="coconut.jpg"
-                            title="coconut tree"
-                            />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                            Card Title
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur, dolore aliquam ipsa aperiam enim corporis animi laudantium? Hic corrupti eius repudiandae inventore sequi enim accusantium quia voluptate porro ab.
-                            Officia usdam recusandae totam magnam quidem placeat nostrum saepe? Nisi distinctio nobis tenetur libero praesentium ipsa tempora!
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs>
-                    {/* creating card */}
-                    <Card sx={{ maxWidth: 300 }}>
-                        <CardMedia
-                            sx={{ height: 140 }}
-                            image="coconut.jpg"
-                            title="coconut tree"
-                            />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                            Card Title
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur, dolore aliquam ipsa aperiam enim corporis animi laudantium? Hic corrupti eius repudiandae inventore sequi enim accusantium quia voluptate porro ab.
-                            Officia usdam recusandae totam magnam quidem placeat nostrum saepe? Nisi distinctio nobis tenetur libero praesentium ipsa tempora!
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs>
-                    {/* creating card */}
-                    <Card sx={{ maxWidth: 300 }}>
-                        <CardMedia
-                            sx={{ height: 140 }}
-                            image="coconut.jpg"
-                            title="coconut tree"
-                            />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                            Card Title
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur, dolore aliquam ipsa aperiam enim corporis animi laudantium? Hic corrupti eius repudiandae inventore sequi enim accusantium quia voluptate porro ab.
-                            Officia usdam recusandae totam magnam quidem placeat nostrum saepe? Nisi distinctio nobis tenetur libero praesentium ipsa tempora!
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                </Grid>
-
+                </CardContent>
+            </Card>
             </Grid>
+            <Grid item xs={12} sm={6} md={6}>
+            <Card >
+                <CardMedia
+                    component="img"
+                    sx={{height: 140}}
+                    image ="./coconut.jpg"
+                    alt="" 
+                />
+                <CardContent>
+                    <Typography variant="h6" component="div">
+                        Card Title
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </Typography>
+                </CardContent>
+            </Card>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+            <Card >
+                <CardMedia
+                    component="img"
+                    sx={{height: 140}}
+                    image ="./coconut.jpg"
+                    alt="" 
+                />
+                <CardContent>
+                    <Typography variant="h6" component="div">
+                        Card Title
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </Typography>
+                </CardContent>
+            </Card>
+            </Grid>
+        </Grid>
         </Grid>
     );
 }
